@@ -1,7 +1,5 @@
 #!/bin/bash
-
 sed -i 's/\r$//' install-story-node.sh
-
 set -e
 
 echo "Обновляем систему и устанавливаем зависимости..."
