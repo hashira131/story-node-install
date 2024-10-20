@@ -1,4 +1,16 @@
 #!/bin/bash
+
+echo "  ██  ██   ███████╗██╗  ██╗██╗██╗     ██╗██╗   ██╗██████╗ ██╗   ██╗"
+echo "  ██  ██   ██╔════╝██║  ██║██║██║     ██║██║   ██║██╔══██╗██║   ██║"
+echo "  ██  ██   █████╗  ███████║██║██║     ██║██║   ██║██████╔╝██║   ██║"
+echo "  ██  ██   ██╔══╝  ██╔══██║██║██║     ██║██║   ██║██╔═══╝ ██║   ██║"
+echo "  ██████╗  ███████╗██║  ██║██║███████╗██║╚██████╔╝██║     ╚██████╔╝"
+echo "  ╚══════╝  ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝      ╚═════╝ "
+echo "                             H A S H I R A                             "
+echo ""
+
+# Остальная часть вашего скрипта...
+
 sed -i 's/\r$//' install-story-node.sh
 
 set -e
@@ -23,4 +35,17 @@ make build
 echo "Запускаем ноду..."
 ./storyd start
 
-echo "Установка завершена."
+colors
+line
+logo
+line
+prepare_files
+line
+install_docker
+line
+run_docker
+line
+output
+line
+echo "Wish lifechange case with HASHIRA"
+line
